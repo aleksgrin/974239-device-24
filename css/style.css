@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff2') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
+    font-weight: 700;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 50%;
+}
+
+/*header*/
+
+.main-header {
+    position: relative;
+    background-color: #f7e296;
+    padding: 50px 60px;
+    margin-top: 40px;
+}
+.logo-device {
+    position: absolute;
+    top: -20px;
+}
