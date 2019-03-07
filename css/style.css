@@ -83,7 +83,7 @@ img {
     margin-top: 40px;
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .logo-device {
@@ -145,6 +145,10 @@ img {
     color: #000000;
 }
 
+.header-nav{
+    width: 100%;
+}
+
 .header-nav-list{
     list-style: none;
     margin: 0;
@@ -177,8 +181,13 @@ img {
     margin-top: 30px;
     padding-bottom: 22px;
     width: 1100px;
+    height: 130px;
+
 
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
 
     position: absolute;
     z-index: 6;
@@ -203,109 +212,17 @@ img {
     width: 200px;
 }
 
-.catedories-list-item:first-child{
-    margin-right: 40px;
-}
-/*
-.header-right{
-    width: 520px;
-    margin-left: auto;
-    padding-left: 20px; 
-}
-
-.in-out-list{
-    font-size: 15px;
-    line-height: 30px;
-
-    list-style: none;
-    padding: 0;
-    margin:0;
-
-    display: flex;
-}
-
-.in-out-item {
-    flex-basis: 100px;
-}
-
-.in-out-item:first-of-type {
-    flex-basis: auto;
-}
-
-.in-out-item:first-child {
-    margin-right: auto;
-    padding-left: 27px; 
-}
-
-.in-out-item:nth-child(2) {
-    padding-left: 8px; 
-}
-
-.in-out-item:last-child {
-    text-align: right;
-}
-
-.in-out-item a {
-    color: #000000;
-}
-
-
-.services-list {
-    font-family: 'Gilroy', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-
-    list-style: none;
-    padding: 0;
-    margin:0;
-    margin-top: 38px;
-
-    display: flex;
-
-}
-
-.services-item{
-    flex-basis: 160px;
-}
-.services-item:last-child {
-    margin-left: auto;
-    text-align: right;
-}
-
-.services-item a {
-    color: #000000;
-}
-
-.catedories-list{
-    font-size: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    position: absolute;
-
-    display:none; 
-}
-
-.catedories-list-item{
-    width: 200px;
-}
-.catedories-list-item:first-child{
+.catedories-list-item:nth-child(1),
+.catedories-list-item:nth-child(2),
+.catedories-list-item:nth-child(3){
+    flex-basis: 30px;
     margin-right: 40px;
 }
 
-.catedories-list a{
-    color: #000000;
+.catedories-list-item:nth-child(4),
+.catedories-list-item:nth-child(5){
+    flex-basis: 40px;
 }
-
-.categories-inner{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}*/
 
 /*main*/
 
