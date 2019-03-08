@@ -17,12 +17,12 @@
 					</svg>
 				</a>
 				<form action="https://echo.htmlacademy.ru" method="POST" class="header-search half-width">
-					<input type="text" value="Поиск по сайту">
+					<input class="input-search" type="text" value="Поиск по сайту">
 				</form>
 				<ul class="user-menu-list half-width">
-					<li class="user-menu-item"><a href="#">Войти</a></li>
-					<li class="user-menu-item"><a href="#">Сравнить</a></li>
-					<li class="user-menu-item"><a href="#">Корзина</a></li>
+					<li class="user-menu-item user"><a href="#">Войти</a></li>
+					<li class="user-menu-item compare"><a href="#">Сравнить</a></li>
+					<li class="user-menu-item cart"><a href="#">Корзина</a></li>
 				</ul>
 				<nav class="header-nav">
 					<ul class="header-nav-list">
@@ -46,7 +46,7 @@
 			<main class="main-main">
 				<section class="slider">
 					<ul class="promo-slider">
-						<li class="promo-slider-item"><a href="#"><span class="visually-hidden">Товар 1</span></a></li>
+						<li class="promo-slider-item"><a class="promo-slider-item-active" href="#"><span class="visually-hidden">Товар 1</span></a></li>
 						<li class="promo-slider-item"><a href="#"><span class="visually-hidden">Товар 2</span></a></li>
 						<li class="promo-slider-item"><a href="#" class="promo-item-active"><span class="visually-hidden">Товар 3</span></a></li>
 					</ul>
@@ -67,7 +67,7 @@
 									<td>5 кг</td>
 									<td>Карбон</td>
 								</tr>
-								<tr>
+								<tr class="slider-table-small">
 									<td>Длина палки</td>
 									<td>Вес палки</td>
 									<td>Материал</td>
@@ -239,7 +239,7 @@
 			<section class="services">
 				<div class="container">
 					<ul class="services-nav-list">
-						<li class="services-nav-item"><a href="#" class="button services-button">Доставка</a></li>
+						<li class="services-nav-item services-nav-item-active"><a href="#" class="button services-button">Доставка</a></li>
 						<li class="services-nav-item"><a href="#" class="button services-button">Гарантия</a></li>
 						<li class="services-nav-item"><a href="#" class="button services-button">Кредит</a></li>
 					</ul>
@@ -275,10 +275,58 @@
 				<section class="manufacturers">
 					<h2 class="visually-hidden">Производители</h2>
 					<ul class="manufacturers-list">
-						<li class="manufacturers-item"><a href="#"><img src="img/logo-1.jpg" alt="" width="260" height="100"></a></li>
-						<li class="manufacturers-item"><a href="#"><img src="img/logo-2.jpg" alt="" width="260" height="100"></a></li>
-						<li class="manufacturers-item"><a href="#"><img src="img/logo-3.jpg" alt="" width="260" height="100"></a></li>
-						<li class="manufacturers-item"><a href="#"><img src="img/logo-4.jpg" alt="" width="260" height="100"></a></li>
+						<li class="manufacturers-item">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" id="svgroot" viewBox="0 0 260 100" width="260" height="100">
+								    <defs>
+									    <filter id="filtersPicture">
+									       <feComposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="0" k4="0" />
+									       <feColorMatrix id="filter_38" type="saturate" values="0" data-filterid="38" />
+									    </filter>
+								    </defs>
+								    <image filter="url(&quot;#filtersPicture&quot;)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/logo-1.jpg" />
+								</svg>
+							</a>
+						</li>
+						<li class="manufacturers-item">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" id="svgroot" viewBox="0 0 260 100" width="260" height="100">
+								    <defs>
+									    <filter id="filtersPicture">
+									       <feComposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="0" k4="0" />
+									       <feColorMatrix id="filter_38" type="saturate" values="0" data-filterid="38" />
+									    </filter>
+								    </defs>
+								    <image filter="url(&quot;#filtersPicture&quot;)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/logo-2.jpg" />
+								</svg>
+							</a>
+						</li>
+						<li class="manufacturers-item">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" id="svgroot" viewBox="0 0 260 100" width="260" height="100">
+								    <defs>
+									    <filter id="filtersPicture">
+									       <feComposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="0" k4="0" />
+									       <feColorMatrix id="filter_38" type="saturate" values="0" data-filterid="38" />
+									    </filter>
+								    </defs>
+								    <image filter="url(&quot;#filtersPicture&quot;)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/logo-3.jpg" />
+								</svg>
+							</a>
+						</li>
+						<li class="manufacturers-item">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" id="svgroot" viewBox="0 0 260 100" width="260" height="100">
+								    <defs>
+									    <filter id="filtersPicture">
+									       <feComposite result="inputTo_38" in="SourceGraphic" in2="SourceGraphic" operator="arithmetic" k1="0" k2="1" k3="0" k4="0" />
+									       <feColorMatrix id="filter_38" type="saturate" values="0" data-filterid="38" />
+									    </filter>
+								    </defs>
+								    <image filter="url(&quot;#filtersPicture&quot;)" x="0" y="0" width="260" height="100" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/logo-4.jpg" />
+								</svg>
+							</a>
+						</li>
 					</ul>
 				</section>
 				<div class="about-and-cont">
@@ -314,9 +362,9 @@
 						</svg>
 					</a>
 					<ul class="footer-in-out-list">
-						<li class="footer-in-out-item"><a href="#">Войти</a></li>
-						<li class="footer-in-out-item"><a href="#">Сравнить</a></li>
-						<li class="footer-in-out-item"><a href="#">Корзина</a></li>
+						<li class="footer-in-out-item footer-user"><a href="#">Войти</a></li>
+						<li class="footer-in-out-item footer-compare"><a href="#">Сравнить</a></li>
+						<li class="footer-in-out-item footer-cart"><a href="#">Корзина</a></li>
 					</ul>
 				</div>
 				<div class="footer-middle">
