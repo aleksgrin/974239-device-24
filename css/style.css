@@ -136,10 +136,9 @@ img {
 }
 
 .input-search:focus + .header-search-button {
-    display: inline-block;
     position: relative;
     top: -1px;
-    /*top: -10px;*/
+    opacity: 1;
 }
 
 .header-search-button {
@@ -150,7 +149,7 @@ img {
     cursor: pointer;
     position: relative;
     left: -3px;
-    display: none;
+    opacity: 0;
 }
 
 .header-search-button:hover {
@@ -159,9 +158,14 @@ img {
 }
 
 .header-search-button:focus {
+    opacity: 1;
     background-color: #000000;
     color: #ffffff;
     outline: none;
+}
+
+.header-search-button:focus + .input-search {
+    border-bottom: 2px solid black;
 }
 
 .header-search-button:active {
