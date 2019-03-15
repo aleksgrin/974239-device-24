@@ -77,11 +77,9 @@ img {
 
 
     background-image: linear-gradient(to top, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
-    /*transition: all 1s ease;*/
 }
 
 .button:hover{
-    /*background-image: linear-gradient(to top, transparent 0%, #f0c52e 0%, #f0c52e 100%, transparent 100%);*/
     background-color: #f0c52e;
 }
 
@@ -103,9 +101,14 @@ img {
 
 .logo-device {
     position: absolute;
-    top: -20px;
+    top: -19px;
 }
 
+.header-search{
+    position: relative;
+    vertical-align: bottom;
+    top: -2px;
+}
 .input-search{
     font-size: 15px;
     line-height: 30px;
@@ -117,17 +120,25 @@ img {
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: 3px center;
+    min-height: 34px;
+}
 
+.input-search:hover{
+    color: rgba(0,0,0,0.6);
 }
 
 .input-search:focus{
     outline: none;
     border-bottom: 2px solid black;
-
+    position: relative;
+    top: -1px;
 }
 
 .input-search:focus + .header-search-button{
     display: inline-block;
+    position: relative;
+    top: -1px;
+    /*top: -10px;*/
 }
 
 .header-search-button{
@@ -154,10 +165,6 @@ img {
 
 .header-search-button:active{
     color: rgba(255,255,255,0.3);
-}
-
-.input-search:hover{
-    color: rgba(0,0,0,0.6);
 }
 
 .header-half{
@@ -242,11 +249,11 @@ img {
 
 .catalog-header{
     display: block;
-    padding-right: 27px;
+    padding-right: 20px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23b8a974' d='M16 7H9V0H7v7H0v2h7v7h2V9h7z'/%3E%3C/svg%3E");
     background-size: 16px;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 2px center;
 }
 
 .header-nav-item-menu:hover .catedories-list{
@@ -258,7 +265,7 @@ img {
 }
 
 .header-nav-item:nth-child(4n-3){
-    width: 248px; 
+    width: 250px; 
 }
 
 .header-nav-item:nth-child(4n){
@@ -289,8 +296,6 @@ img {
     width: 1160px;
     height: 160px;
 
-
-    /*display: flex;*/
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -446,13 +451,11 @@ img {
 }
 
 .slider-button{
-    /*padding: 0 40px 0 45px;*/
     letter-spacing: 3.7px;
 }
 
 .slider-table{
     margin-top: 54px;
-    /*box-sizing: content-box;*/
 }
 
 .slider-table-big{
@@ -460,7 +463,6 @@ img {
     font-size: 36px;
     line-height: 48px;
     font-weight: lighter;
-    /*letter-spacing: 0.7px;*/
 }
 
 .slider-table td{
@@ -485,7 +487,6 @@ img {
     font-size: 179.2px;
     line-height: 179.2px;
     color: #ffffff;
-    /*color: blue;*/
     position: absolute;
     top: -14px;
     right: -12px;
@@ -631,8 +632,6 @@ img {
     display: block;
     width: 280px;
     margin-bottom: 22px;
-    /*padding-top: 8px;*/
-    /*padding-bottom: 8px;*/
 }
 
 .services-slide{
@@ -671,10 +670,7 @@ img {
     background-color: #000000;
 }
 
-
-
 .services-button{
-    /*padding: 0;*/
     display: block;
     width: 160px;
     letter-spacing: 3.7px;
@@ -786,7 +782,6 @@ svg image:hover {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 30px;
-    /*letter-spacing: 0.1px;*/
 }
 
 .about-us-list{
@@ -856,9 +851,7 @@ svg image:hover {
     letter-spacing: 3.7px;
 }
 
-/*.form-write-us{
-    width: 960px;
-}*/
+
 /*Футер*/
 .main-footer{
     background-color: #464646;
@@ -1051,15 +1044,13 @@ svg image:hover {
 
 /*popup*/
 .form-write-us{
-    /*display: none;*/
-    position: absolute;
-    top: 1056px;
+    position: fixed;
+    top: 100px;
     left: 240px;
     width: 960px;
 
-    height: 553px;
     background-color: #fff;
-    padding: 94px 100px;
+    padding: 94px 100px 78px 100px;
 
     box-shadow: 0 6px 24px 3px #d4d4d4;
 }
@@ -1184,10 +1175,9 @@ p.letter-text{
 .popup-map{
     width: 960px;
     height: 560px;
-    position: absolute;
-    top: 1856px;
+    position: fixed;
+    top: 100px;
     left: 240px;
-    outline: 1px solid red;
     background-color: #eae9e4;
 
     box-shadow: 0 6px 24px 3px #d4d4d4;
@@ -1195,15 +1185,62 @@ p.letter-text{
     display: none;
 }
 
-.modal-show{
-    display: block;
-}
-
 .modal-hide{
     display: none;
 }
 
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(50px);
+    }
+    90% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.7s;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.form-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
+
 /*catalog*/
+
+.main-header-catalog .logo-device-catalog{
+    top: -17px;
+}
 
 .logo-device[href]:hover{
     opacity: 0.6;
@@ -1493,12 +1530,12 @@ p.letter-text{
 }
 .my-checkbox{
     display: block;
-    width: 27px;
+    width: 23px;
     height: 23px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
-    background-size: 27px 23px;
+    background-size: 23px 23px;
     position: absolute;
-    left: -3px;
+    left: -1px;
 }
 
 input[type="checkbox"]:hover + .my-checkbox{
@@ -1506,8 +1543,12 @@ input[type="checkbox"]:hover + .my-checkbox{
 }
 
 input[type="checkbox"]:checked + .my-checkbox{
+    display: block;
+    width: 27px;
+    height: 23px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
     left: -1px;
+    background-size: 27px 23px;
 }
 
 input[type="checkbox"]:checked:hover + .my-checkbox{

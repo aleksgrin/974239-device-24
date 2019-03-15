@@ -17,7 +17,7 @@
 					</svg>
 				</a>
 				<form action="https://echo.htmlacademy.ru" method="POST" class="header-search half-width">
-					<input class="input-search" type="text" value="Поиск по сайту">
+					<input class="input-search" type="text" placeholder="Поиск по сайту">
 					<button type="submit" class="header-search-button">Найти</button>
 				</form>
 				<ul class="user-menu-list half-width">
@@ -440,44 +440,10 @@
 		</section>
 		<section class="popup-map modal-hide"> 
 			<h2 class="visually-hidden">Карта</h2>
-			<!-- Здесь будет iframe -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947346!2d37.52742931574407!3d55.68703400453018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1552646404242" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<button class="popup-form-close"><span class="visually-hidden">Закрыть</span></button>
 		</section>
 
-		<script>
-			var writeBtn = document.querySelector(".contacts-button");
-			var formWrite = document.querySelector(".form-write-us");
-			var closeWrite = formWrite.querySelector(".popup-form-close");
-
-			var mapBtn = document.querySelector(".map");
-			var map = document.querySelector(".popup-map");
-			var closeMap = map.querySelector(".popup-form-close");
-
-			console.log(mapBtn);
-
-			writeBtn.addEventListener("click", function(event) {
-				event.preventDefault();
-				formWrite.classList.remove("modal-hide");
-			    formWrite.classList.add("modal-show");
-			});
-
-			closeWrite.addEventListener("click", function(event) {
-				event.preventDefault();
-				formWrite.classList.remove("modal-show");
-			    formWrite.classList.add("modal-hide");
-			});
-
-			mapBtn.addEventListener("click", function(event) {
-				event.preventDefault();
-				map.classList.remove("modal-hide");
-			    map.classList.add("modal-show");
-			});
-
-			closeMap.addEventListener("click", function(event) {
-				event.preventDefault();
-				map.classList.remove("modal-show");
-			    map.classList.add("modal-hide");
-			});
-		</script>
+		<script src="js/device.js"></script>
 	</body>
 </html>
