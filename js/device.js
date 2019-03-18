@@ -36,9 +36,9 @@ closeMap.addEventListener("click", function(event) {
     map.classList.add("modal-hide");
 });
 
-formWrite.addEventListener("submit", function(evt) {
+formWrite.addEventListener("submit", function(event) {
     if (!name.value || !email.value) {
-        evt.preventDefault();
+        event.preventDefault();
         formWrite.classList.remove("form-error");
         formWrite.offsetWidth = formWrite.offsetWidth;
         formWrite.classList.add("form-error");

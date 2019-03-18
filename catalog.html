@@ -6,7 +6,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,8 +18,9 @@
                 </svg>
             </a>
             <form action="https://echo.htmlacademy.ru" method="POST" class="header-search half-width">
-                <input class="input-search" type="text" value="Поиск по сайту">
+                <input class="input-search" type="text" placeholder="Поиск по сайту" id="header-search">
                 <button type="submit" class="header-search-button">Найти</button>
+                <label for="header-search" class="visually-hidden">Поиск по сайту</label>
             </form>
             <ul class="user-menu-list half-width">
                 <li class="user-menu-item user">
@@ -34,12 +35,24 @@
                     <li class="header-nav-item header-nav-item-menu">
                         <a class="catalog-header" href="#">Каталог товаров</a>
                         <ul class="catedories-list">
-                            <li class="catedories-list-item"><a href="#">Виртуальная реальность</a></li>
-                            <li class="catedories-list-item"><a>Моноподы для селфи</a></li>
-                            <li class="catedories-list-item"><a href="#">Экшн-камеры</a></li>
-                            <li class="catedories-list-item"><a href="#">Фитнес-браслеты</a></li>
-                            <li class="catedories-list-item"><a href="#">Умные часы</a></li>
-                            <li class="catedories-list-item"><a href="#">Квадрокоптеры</a></li>
+                            <li class="catedories-list-item">
+                                <ul class="categories-list-inner">
+                                    <li class="categories-list-inner-item"><a href="#">Виртуальная реальность</a></li>
+                                    <li class="categories-list-inner-item"><a>Моноподы для селфи</a></li>
+                                    <li class="categories-list-inner-item"><a href="#">Экшн-камеры</a></li>
+                                </ul>
+                            </li>
+                            <li class="catedories-list-item">
+                                <ul class="categories-list-inner">
+                                    <li class="categories-list-inner-item"><a href="#">Фитнес-браслеты</a></li>
+                                    <li class="categories-list-inner-item"><a href="#">Умные часы</a></li>
+                                </ul>
+                            </li>
+                            <li class="catedories-list-item">
+                                <ul class="categories-list-inner">
+                                    <li class="categories-list-inner-item"><a href="#">Квадрокоптеры</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li class="header-nav-item"><a href="#">Доставка</a></li>
@@ -233,7 +246,6 @@
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </main>
     <footer class="main-footer">
         <div class="container">
